@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Market Wale Bhiya — Online Store</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="top"><div class="container nav">
+<a class="logo" href="/">Market<span>Wale</span></a>
+<form id="searchForm" class="search"><input id="search" placeholder="Search products..." autocomplete="off"><button>Search</button></form>
+<nav><a href="/">Home</a><a href="#shop">Shop</a><a href="/admin">Admin</a><a href="#account" id="accountLink">Account</a><button id="cartBtn" class="cart">Cart <b id="cartCount">0</b></button></nav>
+</div></header>
+<main>
+<section class="hero"><div class="container hero-in"><div><p class="eyebrow">SMART SHOPPING • GREAT VALUE</p><h1>Your everyday marketplace, made simple.</h1><p>Electronics, fashion, home, grocery, books and more — all in one professional store.</p><a class="btn" href="#shop">Start Shopping</a></div><div class="hero-card">⚡<strong>Fresh Deals</strong><span>New products added by the admin appear here automatically.</span></div></div></section>
+<section class="container section"><div class="section-head"><h2>Categories</h2><span>Explore by category</span></div><div id="categories" class="chips"></div></section>
+<section id="shop" class="container section"><div class="section-head"><h2>Products</h2><select id="sort"><option value="newest">Newest</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option></select></div><div class="filters"><input id="min" type="number" placeholder="Min price"><input id="max" type="number" placeholder="Max price"><input id="brand" placeholder="Brand"><button class="btn small" id="apply">Filter</button></div><div id="products" class="grid"></div></section>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
+<footer><div class="container footer"><div><div class="logo">Market<span>Wale</span></div><p>A scalable starter marketplace with admin controls.</p></div><div><h4>Customer</h4><a href="#shop">Shop</a><a href="#account">My Account</a><a href="#orders">My Orders</a></div><div><h4>Policies</h4><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Returns</a></div></div></footer>
+<script src="/app.js"></script></body></html>
